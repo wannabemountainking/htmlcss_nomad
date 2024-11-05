@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yoonies</title>
+    <style>
+      a {
+          color: wheat;
+          background-color: tomato;
+          text-decoration: none;
+          padding: 3px 5px;
+          border-radius: 5px;
+          font-size: 55px;
+          transition: all 1s ease-in-out;
+      }
+      a:hover {
+          border-radius: 30px;
+          color: tomato;
+          background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+<!--      transitions: 에니메이션과 같이 한 상태(state)에서 다른 상태(state)로의 변화-->
+<a href="#">Go Home</a>
+  </body>
+</html>
+
+<!--
+
+transition: state -> state 변화 과정에 속하므로 :hover, :focus 등과 같은 pseudo selector가 없는 요소에 붙여야 함
+ex) transition: background-color 10s
+transition의 변경 요소는 (보통 속성) 반드시 a:hover ... 와 같이 변하는 종착점에 변경 요소로 있어야 함.
+
+
+-->

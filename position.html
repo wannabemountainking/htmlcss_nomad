@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yoonie Times</title>
+    <style>
+      body {
+          height: 1000vh;
+          margin: 50px;
+      }
+      div {
+
+          width: 150px;
+          height: 150px;
+      }
+      #different {
+          /* 만약 top, bottom, right, left 중 하나라도 규정되면 div 1번째 위로 올라감 => layer가 달라짐 */
+          /*top: 20px;*/
+          /*left: 50px;*/
+
+          width: 200px;
+          height: 150px;
+          color: white;
+          background-color: wheat;
+          opacity: 0.5;
+          position: relative;
+      }
+      #teal {
+          position: fixed;
+          background-color: purple;
+          opacity: 0.5;
+      }
+      .green {
+          background-color: teal;
+          height: 100px;
+          width: 100px;
+          /*position: relative;*/
+          position: absolute;
+          top: -10px;
+          left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="teal"></div>
+    <div id="different">
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
+
+<!--
+position에서 중요 사항
+1. position:fixed  =>  화면 상 그 자리에 쭊 있게 하는 속성
+2. position: static => default 값이며 layout이 박스를 처음 위치한 곳에 두는 것
+3. position: relative => element가 처음 위치한 곳을 기준으로 수정할 수 있음 -> 시작점이 매우 중요
+4. position: absolute => 지정해 주는 위치값으로 고정 , 부모요소의 박스와 무관해지며 -> position: relative 한 가장 가까운 부모요소를 기준으로 위치 절대값이 성립
+  => absolute로 하기 위해서는 그 기준이 되는 부모를 relative로 만들어야 함
+
+pseudo-selector: 세부적으로 element를 선택하는 것 예) div:first-child span:nth-child(3) span:nth-child(even) span:nth-child(2n+3)...

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yoonie's</title>
+  <style>
+      /* element 에 변수를 추가해서 조종하기 :root -> document의 root */
+    :root {
+        --main-color: #b779f5; /* 색 정보 저장 변수 설정  === custom property 설정*/
+        --default-border: 1px solid var(--main-color)
+    }
+    body  {
+        height: 1000vh;
+        margin: 50px;
+    }
+    p {
+        /* css 의 색: 1. # hexadecimal color(16진수 컬러) 2. rgb  3. rgba (a는 투명도)  */
+        background-color: var(--main-color); /* 변수 사용 */
+    }
+    a {
+        color: var(--main-color);
+        border: var(--default-border);
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque error excepturi in iusto possimus, quae soluta. A asperiores possimus quam. Ab aut exercitationem expedita incidunt maxime neque nesciunt possimus, voluptas!
+  </p>
+<div>
+  <a href="#">website</a>
+</div>
+</body>
+</html>

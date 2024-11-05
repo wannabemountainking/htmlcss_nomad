@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yoonie Times</title>
+    <style>
+      body {
+          display: flex;
+          height: 100vh;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+      div {
+          background-color: teal;
+          width: 200px;
+          height: 200px;
+      }
+      @media screen and (min-width: 601px) and (max-width: 1400px) and (orientation: landscape){
+          div {
+              background-color: wheat;
+          }
+      }
+      span {
+          font-size: 40px;
+      }
+      @media screen and (orientation: landscape) {
+          span {
+              display: none;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>Please flip your phone :(</span>
+  </body>
+</html>
+
+<!--
+
+media query: css 만으로 웹사이트 사용자의 스크린 사이즈를 알아내는 법
+            - css에 condition을 붙여 반응형을 만드는 것
+            @media screen and ( 조건 1) ... {
+              태그 등 {
+                background-color: green;
+                ....
+              }
+           }
+            - print 도 있음
+            @media print and (저건) ...
+
+-->

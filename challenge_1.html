@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+      body {
+          height: 1000vh;
+          margin: 50px;
+      }
+      span {
+          background-color: yellowgreen;
+          padding: 5px;
+          border-radius: 7px;
+
+      }
+      p span {
+          color: white;
+      }
+      /*div > span {                        !* div 의 바로 밑 자식 span을 가리킬 때 > 표시 *!*/
+      /*    text-decoration: underline;*/
+      /*}*/
+      /*p + span {                          !* p의 바로 밑 형제를 가리킬 때 + 사용 *!*/
+      /*    text-decoration: underline;*/
+      /*}*/
+      p ~ span {                           /* p의 그냥 형제를 가리킬 때 ~ 사용 */
+          text-decoration: underline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+<!--      <span>Hello</span>-->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. <span>inside</span>
+      </p>
+      <address>hi</address>
+      <span>Hey</span>
+    </div>
+  </body>
+</html>
