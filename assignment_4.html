@@ -7,10 +7,50 @@
   </head>
   <body>
     <h1>Create An Account</h1>
-    <form>
-      <label for="firstName">First name
-        <input type="text" id="firstName" placeholder="First name" />
-      </label>
+    <form id="accountForm">
+      <div>
+        <label for="firstNameInput">First name
+          <input type="text" id="firstNameInput" placeholder="First name" />
+        </label>
+      </div>
+      <div>
+        <label for="lastNameInput">Last name
+          <input type="text" id="lastNameInput" placeholder="Last name" />
+        </label>
+      </div>
+      <div>
+        <label for="emailInput">Email
+          <input type="email" id="emailInput" placeholder="Email" required />
+        </label>
+      </div>
+      <div>
+        <label for="userNameInput">User name
+          <input type="text" id="userNameInput" placeholder="User name" />
+        </label>
+      </div>
+      <div>
+        <label for="passwordInput">Password
+          <input type="password" id="passwordInput" minlength="8" maxlength="12" placeholder="Password" required />
+        </label>
+      </div>
+      <div>
+        <label for="birthdayInput">Birth date
+          <input type="date" id="birthdayInput" placeholder="Birth date" />
+        </label>
+      </div>
+      <div>
+        <label for="howHappyAreYouInput">How happy are you?
+          <input type="range" id="howHappyAreYouInput" placeholder="How happy are you?" />
+        </label>
+      </div>
+      <div>
+        <label for="whatIsYourFavColorInput">What is your favorite color?
+          <input type="color" id="whatIsYourFavColorInput" placeholder="What is your favorite color?" />
+        </label>
+      </div>
+      <div>
+        <input type="submit" value="Create Account">
+      </div>
     </form>
   </body>
 </html>
