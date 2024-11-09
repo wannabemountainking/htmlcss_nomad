@@ -1,0 +1,34 @@
+body {
+  background-color: #FF6347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.square-box {
+  background-color: #F5DEB3;
+  width: 33vw;
+  height: 33vw;
+}
+.square-box span {
+  background-color: #008080;
+  border-color: white;
+  border-width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 6vw;
+}
+
+.square-box span:first-child {
+
+}
+
+.square-box span:nth-child(2) {
+
+}
+
+.square-box span:last-child {
+
+}
